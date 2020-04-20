@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Exit : MonoBehaviour
+public class Quit : MonoBehaviour
 {
     // Update is called once per frame
     void Update()
