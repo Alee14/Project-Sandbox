@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Exit : MonoBehaviour
 {
@@ -9,7 +7,6 @@ public class Exit : MonoBehaviour
     {
         if (Input.GetKey("escape"))
         {
-            Debug.Log("Game is now closed.");
             Application.Quit();
         }       
         

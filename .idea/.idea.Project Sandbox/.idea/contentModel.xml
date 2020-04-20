@@ -8,8 +8,10 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Exit.cs" t="Include" />
+          <e p="Gun.cs" t="Include" />
           <e p="MouseLook.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
+          <e p="Target.cs" t="Include" />
         </e>
       </e>
       <e p="Project Sandbox.sln" t="IncludeFlat" />
