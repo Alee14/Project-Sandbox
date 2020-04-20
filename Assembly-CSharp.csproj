@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0EFC0693-0A9D-F8C7-54FA-2C396B66FA99}</ProjectGuid>
+    <ProjectGuid>{4DAE49A4-D091-8633-DD09-5FCC0E830DC2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,33 +58,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Exit.cs" />
      <Compile Include="Assets\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/run/media/storage/user-files/Documents/Unity/SandboxDemo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/run/media/storage/user-files/Documents/Unity/Project Sandbox/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/run/media/storage/user-files/Documents/Unity/SandboxDemo/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/run/media/storage/user-files/Documents/Unity/Project Sandbox/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/run/media/storage/user-files/Documents/Unity/SandboxDemo/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/run/media/storage/user-files/Documents/Unity/Project Sandbox/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/run/media/storage/user-files/Documents/Unity/SandboxDemo/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/run/media/storage/user-files/Documents/Unity/Project Sandbox/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/run/media/storage/user-files/Documents/Unity/SandboxDemo/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/run/media/storage/user-files/Documents/Unity/Project Sandbox/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/run/media/storage/user-files/Documents/Unity/SandboxDemo/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/run/media/storage/user-files/Documents/Unity/Project Sandbox/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/run/media/storage/user-files/Documents/Unity/SandboxDemo/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/run/media/storage/user-files/Documents/Unity/Project Sandbox/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/run/media/storage/user-files/Documents/Unity/SandboxDemo/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/run/media/storage/user-files/Documents/Unity/Project Sandbox/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/run/media/storage/user-files/Documents/Unity/SandboxDemo/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/run/media/storage/user-files/Documents/Unity/Project Sandbox/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/run/media/storage/user-files/Unity/Hub/Editor/2019.3.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
