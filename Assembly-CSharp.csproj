@@ -58,14 +58,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Quit.cs" />
+     <Compile Include="Assets\Scripts\Sound.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/run/media/storage/user-files/Documents/Unity/Project Sandbox/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine.Monetization">
+ <HintPath>/run/media/storage/user-files/Documents/Unity/Project Sandbox/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>/run/media/storage/user-files/Documents/Unity/Project Sandbox/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>/run/media/storage/user-files/Documents/Unity/Project Sandbox/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/run/media/storage/user-files/Documents/Unity/Project Sandbox/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
