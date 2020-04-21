@@ -1283,6 +1283,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 990268100192312567, guid: 61c68b207aaeb438fa625409d4c9247e,
+        type: 3}
+      propertyPath: gravity
+      value: -8.81
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61c68b207aaeb438fa625409d4c9247e, type: 3}
 --- !u!1001 &8450095133562720382
@@ -1351,6 +1356,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450095133606623985, guid: 8489462a89be80c6e91509d42a08b050,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450095133606623985, guid: 8489462a89be80c6e91509d42a08b050,
+        type: 3}
+      propertyPath: Theme
+      value: Fly Octo Fly
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450095133606623985, guid: 8489462a89be80c6e91509d42a08b050,
+        type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: Fly Octo Fly
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450095133606623985, guid: 8489462a89be80c6e91509d42a08b050,
+        type: 3}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e3f5207fa719ae57bbc8f2909e2cc49d, type: 3}
+    - target: {fileID: 8450095133606623985, guid: 8489462a89be80c6e91509d42a08b050,
+        type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450095133606623985, guid: 8489462a89be80c6e91509d42a08b050,
+        type: 3}
+      propertyPath: sounds.Array.data[1].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450095133606623985, guid: 8489462a89be80c6e91509d42a08b050,
+        type: 3}
+      propertyPath: sounds.Array.data[1].loop
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8489462a89be80c6e91509d42a08b050, type: 3}
