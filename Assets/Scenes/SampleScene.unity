@@ -717,8 +717,9 @@ GameObject:
   - component: {fileID: 1133956158}
   - component: {fileID: 1133956160}
   - component: {fileID: 1133956159}
+  - component: {fileID: 1133956161}
   m_Layer: 5
-  m_Name: Title
+  m_Name: Watermark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -740,8 +741,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 196, y: -56}
-  m_SizeDelta: {x: 362.8193, y: 81.113174}
+  m_AnchoredPosition: {x: 207.9, y: -53}
+  m_SizeDelta: {x: 386.51218, y: 75.18996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1133956159
 MonoBehaviour:
@@ -756,7 +757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -784,6 +785,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133956157}
   m_CullTransparentMesh: 0
+--- !u!114 &1133956161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133956157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &1140206996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1355,6 +1371,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 990268099681790120, guid: 61c68b207aaeb438fa625409d4c9247e,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.23584908
+      objectReference: {fileID: 0}
+    - target: {fileID: 990268099681790120, guid: 61c68b207aaeb438fa625409d4c9247e,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.6787044
+      objectReference: {fileID: 0}
+    - target: {fileID: 990268099681790120, guid: 61c68b207aaeb438fa625409d4c9247e,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 990268099681790122, guid: 61c68b207aaeb438fa625409d4c9247e,
         type: 3}
       propertyPath: m_Layer
