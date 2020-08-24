@@ -387,8 +387,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 505, y: -85}
-  m_SizeDelta: {x: 550.24243, y: 125.44623}
+  m_AnchoredPosition: {x: 535.4, y: -251.3}
+  m_SizeDelta: {x: 585.13855, y: 449.98065}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &458945988
 MonoBehaviour:
@@ -424,7 +424,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Welcome to Project Sandbox! \nPlease note that this game is in early development
     and things aren't always working.\n\nIf you're experiencing some issues. Email
-    support@alee-productions.xyz."
+    support@alee-productions.xyz.\n\nControls:\n\nEscape: Quitting the game\nF1:
+    Unlocking mouse\nWASD: Moving\nSpace: Jumping"
 --- !u!222 &458945989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -567,7 +568,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 97.3, y: 25}
+  m_AnchoredPosition: {x: 107.75, y: 26}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &767293138
@@ -741,8 +742,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 102.53, y: 0}
-  m_SizeDelta: {x: 205.05109, y: 0}
+  m_AnchoredPosition: {x: 107.8, y: 0}
+  m_SizeDelta: {x: 215.50616, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &963859623
 MonoBehaviour:
@@ -815,7 +816,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 102.53, y: -31.399994}
+  m_AnchoredPosition: {x: 107.75, y: -33.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1517148424
@@ -896,8 +897,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 103.004456, y: -83}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 112, y: -83}
+  m_SizeDelta: {x: 178.05066, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1757849153
 MonoBehaviour:
@@ -1039,8 +1040,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 103.47891, y: -129}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 112.25, y: -129}
+  m_SizeDelta: {x: 177.54642, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1968663860
 MonoBehaviour:
