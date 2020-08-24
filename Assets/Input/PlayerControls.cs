@@ -41,6 +41,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""UnlockCursor"",
+                    ""type"": ""Button"",
+                    ""id"": ""9245a8ae-c817-4f60-9b78-f639dd4a52f0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -230,6 +238,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5fe61161-b433-47e3-b01b-f299068b92ae"",
+                    ""path"": ""<Keyboard>/f1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and Mouse"",
+                    ""action"": ""UnlockCursor"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -269,6 +288,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Gameplay_Move = m_Gameplay.FindAction("Move", throwIfNotFound: true);
         m_Gameplay_Jump = m_Gameplay.FindAction("Jump", throwIfNotFound: true);
         m_Gameplay_Look = m_Gameplay.FindAction("Look", throwIfNotFound: true);
+        m_Gameplay_UnlockCursor = m_Gameplay.FindAction("UnlockCursor", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -321,6 +341,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Gameplay_Move;
     private readonly InputAction m_Gameplay_Jump;
     private readonly InputAction m_Gameplay_Look;
+    private readonly InputAction m_Gameplay_UnlockCursor;
     public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
@@ -328,6 +349,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Move => m_Wrapper.m_Gameplay_Move;
         public InputAction @Jump => m_Wrapper.m_Gameplay_Jump;
         public InputAction @Look => m_Wrapper.m_Gameplay_Look;
+        public InputAction @UnlockCursor => m_Wrapper.m_Gameplay_UnlockCursor;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -346,6 +368,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Look.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLook;
                 @Look.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLook;
                 @Look.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLook;
+                @UnlockCursor.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnUnlockCursor;
+                @UnlockCursor.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnUnlockCursor;
+                @UnlockCursor.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnUnlockCursor;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -359,6 +384,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Look.started += instance.OnLook;
                 @Look.performed += instance.OnLook;
                 @Look.canceled += instance.OnLook;
+                @UnlockCursor.started += instance.OnUnlockCursor;
+                @UnlockCursor.performed += instance.OnUnlockCursor;
+                @UnlockCursor.canceled += instance.OnUnlockCursor;
             }
         }
     }
@@ -386,5 +414,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
+        void OnUnlockCursor(InputAction.CallbackContext context);
     }
 }

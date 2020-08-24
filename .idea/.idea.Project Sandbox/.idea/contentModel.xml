@@ -22,11 +22,17 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
+          <e p="Dialogue" t="Include">
+            <e p="Dialogue.cs" t="Include" />
+            <e p="DialogueManager.cs" t="Include" />
+            <e p="DialogueTrigger.cs" t="Include" />
+          </e>
           <e p="LoadScene.cs" t="Include" />
           <e p="MouseLook.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
           <e p="Quit.cs" t="Include" />
           <e p="Sound.cs" t="Include" />
+          <e p="UnlockCursor.cs" t="Include" />
         </e>
         <e p="Thirdparty" t="Include">
           <e p="Joystick Pack" t="Include">
