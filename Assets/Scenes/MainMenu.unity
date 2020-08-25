@@ -424,8 +424,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Welcome to Project Sandbox! \nPlease note that this game is in early development
     and things aren't always working.\n\nIf you're experiencing some issues. Email
-    support@alee-productions.xyz.\n\nControls:\n\nEscape: Quitting the game\nF1:
-    Unlocking mouse\nWASD: Moving\nSpace: Jumping"
+    support@alee-productions.xyz.\n\nControls:\n\nEscape: Pause\nWASD: Moving\nSpace:
+    Jumping"
 --- !u!222 &458945989
 CanvasRenderer:
   m_ObjectHideFlags: 0
