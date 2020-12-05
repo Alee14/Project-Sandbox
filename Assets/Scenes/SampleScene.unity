@@ -2285,11 +2285,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb25a675054556c4b6a193453e179c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ApplicationID: 784835227338932244
-  RpcStatus: In Development...
-  RpcDetails: An upcoming Unity game by Alee!
-  RpcLargeImage: wip
-  RpcLargeImageText: Work in Progress!
+  applicationID: 784835227338932244
+  rpcStatus: In Development...
+  rpcDetails: An upcoming Unity game by Alee!
+  rpcLargeImage: wip
+  rpcLargeImageText: Work in Progress!
 --- !u!4 &2140247659
 Transform:
   m_ObjectHideFlags: 0

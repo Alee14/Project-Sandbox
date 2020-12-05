@@ -1,33 +1,34 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 public class DiscordController : MonoBehaviour
 {
 
-    public Discord.Discord discord;
-    public long ApplicationID;
-    public string RpcStatus;
-    public string RpcDetails;
-    public string RpcLargeImage;
-    public string RpcLargeImageText;
+    public Discord.Discord Discord;
+    public long applicationID;
+    public string rpcStatus;
+    public string rpcDetails;
+    public string rpcLargeImage;
+    public string rpcLargeImageText;
 
     // Use this for initialization
     void Start () {
         System.Environment.SetEnvironmentVariable("DISCORD_INSTANCE_ID", "0");
-        discord = new Discord.Discord(ApplicationID, (System.UInt64)Discord.CreateFlags.Default);
-        var activityManager = discord.GetActivityManager();
+        Discord = new Discord.Discord(applicationID, (System.UInt64)global::Discord.CreateFlags.Default);
+        var activityManager = Discord.GetActivityManager();
         var activity = new Discord.Activity
         {
-            State = RpcStatus,
-            Details = RpcDetails,
+            State = rpcStatus,
+            Details = rpcDetails,
             Assets =
             {
-                LargeImage = RpcLargeImage,
-                LargeText = RpcLargeImageText
+                LargeImage = rpcLargeImage,
+                LargeText = rpcLargeImageText
             }
         };
         activityManager.UpdateActivity(activity, (res) =>
         {
-            if (res == Discord.Result.Ok)
+            if (res == global::Discord.Result.Ok)
             {
                 Debug.LogWarning("Everything is fine!");
             }
@@ -35,7 +36,7 @@ public class DiscordController : MonoBehaviour
         
         activityManager.ClearActivity((result) =>
         {
-            if (result == Discord.Result.Ok)
+            if (result == global::Discord.Result.Ok)
             {
                 Debug.Log("Success!");
             }
@@ -48,6 +49,6 @@ public class DiscordController : MonoBehaviour
 	
     // Update is called once per frame
     void Update () {
-        discord.RunCallbacks();
+        Discord.RunCallbacks();
     }
 }
