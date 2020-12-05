@@ -30,7 +30,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "UnlockCursor",
+                    "name": "Pause",
                     "type": "Button",
                     "id": "9245a8ae-c817-4f60-9b78-f639dd4a52f0",
                     "expectedControlType": "Button",
@@ -229,11 +229,11 @@
                 {
                     "name": "",
                     "id": "5fe61161-b433-47e3-b01b-f299068b92ae",
-                    "path": "<Keyboard>/f1",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard and Mouse",
-                    "action": "UnlockCursor",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
