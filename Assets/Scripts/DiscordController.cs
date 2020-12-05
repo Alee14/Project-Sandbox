@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Serialization;
 
 public class DiscordController : MonoBehaviour
 {
@@ -14,7 +13,7 @@ public class DiscordController : MonoBehaviour
     // Use this for initialization
     void Start () {
         System.Environment.SetEnvironmentVariable("DISCORD_INSTANCE_ID", "0");
-        Discord = new Discord.Discord(applicationID, (System.UInt64)global::Discord.CreateFlags.Default);
+        Discord = new Discord.Discord(applicationID, (System.UInt64)global::Discord.CreateFlags.NoRequireDiscord);
         var activityManager = Discord.GetActivityManager();
         var activity = new Discord.Activity
         {
