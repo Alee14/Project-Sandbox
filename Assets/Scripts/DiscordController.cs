@@ -4,20 +4,25 @@ public class DiscordController : MonoBehaviour
 {
 
     public Discord.Discord discord;
+    public long ApplicationID;
+    public string RpcStatus;
+    public string RpcDetails;
+    public string RpcLargeImage;
+    public string RpcLargeImageText;
 
     // Use this for initialization
     void Start () {
         System.Environment.SetEnvironmentVariable("DISCORD_INSTANCE_ID", "0");
-        discord = new Discord.Discord(784835227338932244, (System.UInt64)Discord.CreateFlags.Default);
+        discord = new Discord.Discord(ApplicationID, (System.UInt64)Discord.CreateFlags.Default);
         var activityManager = discord.GetActivityManager();
         var activity = new Discord.Activity
         {
-            State = "In Development...",
-            Details = "An upcoming Unity game by Alee!",
+            State = RpcStatus,
+            Details = RpcDetails,
             Assets =
             {
-                LargeImage = "wip",
-                LargeText = "Work in Progress!"
+                LargeImage = RpcLargeImage,
+                LargeText = RpcLargeImageText
             }
         };
         activityManager.UpdateActivity(activity, (res) =>
