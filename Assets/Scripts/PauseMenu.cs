@@ -8,18 +8,20 @@ public class PauseMenu : MonoBehaviour
     public bool lockCursor = true;
 
     public GameObject panel;
-    private int counter;
+    private int m_counter;
     // Update is called once per frame
-    public void showhidePanel()
+    public void ShowhidePanel()
     {
-        counter++;
-        if (counter % 2 == 1)
+        m_counter++;
+        if (m_counter % 2 == 1)
         {
             panel.gameObject.SetActive(true);
+            Time.timeScale = 0;
         }
         else
         {
             panel.gameObject.SetActive(false);
+            Time.timeScale = 1;
         }
         
     }
@@ -28,7 +30,7 @@ public class PauseMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             lockCursor = !lockCursor;
-            showhidePanel();
+            ShowhidePanel();
             
         }
 
